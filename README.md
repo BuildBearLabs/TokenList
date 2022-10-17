@@ -44,11 +44,12 @@
 
 ## Submission
 
-- Go to `[github.com/BuildBearLabs/TokenList](https://github.com/BuildBearLabs/TokenList)`.
+- Go to [github.com/BuildBearLabs/TokenList](https://github.com/BuildBearLabs/TokenList).
 - Star the repo.
 - Fork the repo.
 - Start from that code as a base and build up the project.
 - Submit a PR.
+- Fill this [form](https://forms.gle/SNUKga7Myk6rATpr7)
 
 ## Takeaways
 
