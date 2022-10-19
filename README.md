@@ -28,6 +28,12 @@ TokenList is an npm package containing a list of token details in popular EVM ne
 
   <img width="605" alt="Accessing token values (1)" src="https://user-images.githubusercontent.com/101330853/196633936-432bdaea-b01a-4c54-abcb-459caefcc3b3.png">
 
+## Demo of all the steps explained above
+
+
+
+https://user-images.githubusercontent.com/101330853/196638001-b4273e53-25a4-453c-9b05-1688f539f782.mp4
+
 
 
 ## Future works
