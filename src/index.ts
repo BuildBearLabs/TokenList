@@ -3,8 +3,8 @@
  *       Required objects - polygon and homestead are imported and used for mapping in tokens object.
  *       The same token object is exported for use.
  */
-import { polygon } from "./polygon";
-import { homestead } from "./homestead";
+import { polygon } from "./mainnets/polygon";
+import { homestead } from "./mainnets/homestead";
 
 /**
  * @desc Creates a mapping with chainIds with mainnet object, also name with mainnet object
