@@ -17,7 +17,7 @@ TokenList is an npm package containing a list of token details in popular EVM ne
 
 ## How to use
 
-- To use the tokenlist in your code, first of all import the package "maintokenlist" to your file.
+- To use the tokenlist in your code, first of all import the package "tokenlist" to your file.
   This can be done using the code line : " const {tokens} = require('@iamnijin/tokenlist'); "
   
   <img width="605" alt="Importing tokenlist" src="https://user-images.githubusercontent.com/101330853/196633924-af957089-2293-4a73-a4b7-ca9064ba19e2.png">
