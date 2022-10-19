@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -31,8 +31,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "tokenlist",
-  "author": "Emmanuel Antony",
+  "name": "@iamnijin/tokenlist",
+  "author": "Nijin P S",
   "module": "dist/tokenlist.esm.js",
   "size-limit": [
     {
