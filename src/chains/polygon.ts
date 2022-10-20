@@ -445,9 +445,9 @@ export let polygonArr = [
     address: '0xa8d394fe7380b8ce6145d5f85e6ac22d4e91acde',
   },
   {
-    name: 'Bored Ape Family',
+    name: 'Matic Token',
     symbol: 'MATIC',
-    address: '0x4cfd37d4688244a6b4de99469cdae9607b59c68c',
+    address: '0x0000000000000000000000000000000000001010',
   },
   {
     name: 'Uniswap (PoS)',
