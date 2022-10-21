@@ -1,8 +1,6 @@
 import { isTokenInChain } from '../src';
 
-// tests whether top 24 tokens are there or not
-
-function tenTokensTest() {
+function BigTokensTest() {
   let testArr = [
     'BUSD',
     'DAI',
@@ -30,7 +28,7 @@ function tenTokensTest() {
     'HEX',
   ];
 
-  let chainsArr = ['polygon', 'homestead'];
+  let chainsArr = [ 'polygon', 'homestead'];
   for (let i = 0; i < chainsArr.length; i++) {
     const chain = chainsArr[i];
     for (let j = 0; j < testArr.length; j++) {
@@ -42,4 +40,4 @@ function tenTokensTest() {
   }
 }
 
-tenTokensTest();
+BigTokensTest();

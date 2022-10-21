@@ -39,21 +39,21 @@ export let bscArr = [
     symbol: 'Cake',
     address: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
   },
-  {
-    name: 'RRDao.net',
-    symbol: 'RRDao.net',
-    address: '0xa47b34ff31e22ef03f6054af19542bcde260cdc7',
-  },
+  // {
+  //   name: 'RRDao.net',
+  //   symbol: 'RRDao.net',
+  //   address: '0xa47b34ff31e22ef03f6054af19542bcde260cdc7',
+  // },
   {
     name: 'DRIP Token',
     symbol: 'DRIP',
     address: '0x20f663cea80face82acdfa3aae6862d246ce0333',
   },
-  {
-    name: 'My Get Rich Token',
-    symbol: 'MGRT',
-    address: '0x71753d0586ea6b979dfccbb492a45e611e0e0ad6',
-  },
+  // {
+  //   name: 'My Get Rich Token',
+  //   symbol: 'MGRT',
+  //   address: '0x71753d0586ea6b979dfccbb492a45e611e0e0ad6',
+  // },
   {
     name: 'USD Coin',
     symbol: 'USDC',
@@ -89,16 +89,16 @@ export let bscArr = [
     symbol: 'NB88888',
     address: '0xd22bf6440cbb75c2f5f97a04804a4b33afb88888',
   },
-  {
-    name: '$$SafeGrowCoin',
-    symbol: 'SGC',
-    address: '0x7aa3a53360541283ffa9192972223b47a902dc0c',
-  },
-  {
-    name: 'DRIP Reward Token',
-    symbol: 'rDRIP',
-    address: '0xa02a0b2d67d4fa48677a79cadc483e114049916d',
-  },
+  // {
+  //   name: '$$SafeGrowCoin',
+  //   symbol: 'SGC',
+  //   address: '0x7aa3a53360541283ffa9192972223b47a902dc0c',
+  // },
+  // {
+  //   name: 'DRIP Reward Token',
+  //   symbol: 'rDRIP',
+  //   address: '0xa02a0b2d67d4fa48677a79cadc483e114049916d',
+  // },
   {
     name: 'YES WORLD',
     symbol: 'YES',
@@ -264,5 +264,50 @@ export let bscArr = [
     name: 'Pancake LPs',
     symbol: 'Cake-LP',
     address: '0x2ce4ae0e7d05bc6ec0c22cdf87ff899872c2cf7f',
+  },
+  {
+    name: 'Dai Token',
+    symbol: 'DAI',
+    address: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3'
+  },
+  {
+    name: 'Matic Token',
+    symbol: 'MATIC',
+    address: '0xcc42724c6683b7e57334c4e856f4c9965ed682bd'
+  },
+  {
+    name: 'Uniswap',
+    symbol: 'UNI',
+    address: '0xbf5140a22578168fd562dccf235e5d43a02ce9b1'
+  },
+  {
+    name: 'ChainLink Token',
+    symbol: 'LINK',
+    address: '0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd'
+  },
+  {
+    name: 'Cardano Token',
+    symbol: 'ADA',
+    address: '0x3ee2200efb3400fabb9aacf31297cbdd1d435d47'
+  },
+  {
+    name: 'Polkadot Token',
+    symbol: 'DOT',
+    address: '0x7083609fce4d1d8dc0c979aab8c869ea2c873402'
+  },
+  {
+    name: 'TRON',
+    symbol: 'TRX',
+    address: '0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b'
+  },
+  {
+    name: 'Avalanche',
+    symbol: 'AVAX',
+    address: '0x1ce0c2827e2ef14d5c4f29a091d735a204794041'
+  },
+  {
+    name: 'Litecoin Token',
+    symbol: 'LTC',
+    address: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94'
   },
 ];

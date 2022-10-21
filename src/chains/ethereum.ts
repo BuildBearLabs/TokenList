@@ -319,4 +319,9 @@ export let ethereumArr = [
     symbol: 'MANA',
     address: '0x0F5D2fB29fb7d3CFeE444a200298f468908cC942',
   },
+  {
+    name: 'Wrapped Matic (Wormhole)',
+    symbol: 'WMATIC',
+    address: '0x7c9f4C87d911613Fe9ca58b579f737911AAD2D43',
+  },
 ];

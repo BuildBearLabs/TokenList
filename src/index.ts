@@ -2,7 +2,7 @@ import { ethereumArr } from './chains/ethereum';
 import { bscArr } from './chains/bsc';
 import { avalancheArr } from './chains/avalanche';
 import { polygonArr } from './chains/polygon';
-import { cleoArr } from './chains/cleo';
+// import { cleoArr } from './chains/cleo';
 
 //stores chain name with id so that we can access with both
 let chainsRefArray = [
@@ -26,11 +26,11 @@ let chainsRefArray = [
     chainArr: polygonArr,
     chainId: 137,
   },
-  {
-    chainName: 'cleo',
-    chainArr: cleoArr,
-    chainId: 42220,
-  },
+  // {
+  //   chainName: 'cleo',
+  //   chainArr: cleoArr,
+  //   chainId: 42220,
+  // },
 ];
 
 //tokens obj constructor
