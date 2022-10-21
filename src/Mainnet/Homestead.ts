@@ -1,5 +1,5 @@
 /**
- * This Homestead file contains Top 10 erc20 tokens in the object name homestead which was collected from Ethereum Mainnet
+ * This Homestead file contains Top ERC20 based Market Capitalization tokens in the object name homestead which was collected from Ethereum Mainnet
  *  Data Source HREF : https://etherscan.io/tokens
  */
 

@@ -1,5 +1,5 @@
 /**
- * This Polygon file contains Top 10 erc20 tokens in the object name polygon which was collected from Polygon PoS Platform
+ * This Polygon file contains Top ERC20 tokens based Market Capitalization in the object name polygon which was collected from Polygon PoS Platform
  *  Data Source HREF : https://polygonscan.com/tokens
  */
 
