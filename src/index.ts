@@ -15,5 +15,4 @@ const tokens:any ={
 }
 
 export {tokens}
-module.exports = {tokens}
 

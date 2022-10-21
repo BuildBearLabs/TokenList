@@ -1,10 +1,10 @@
 /**
- * This Homestead file contains Top erc20 tokens by Market Capitalization in the object name homestead which was collected from Ethereum Mainnet
+ * This Homestead file contains Top 10 erc20 tokens in the object name homestead which was collected from Ethereum Mainnet
  *  Data Source HREF : https://etherscan.io/tokens
  */
 
 
-const homestead: object = {
+const homestead = {
     USDT: {
         name: 'Tether USD ',
         symbol: 'USDT',

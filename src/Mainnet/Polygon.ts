@@ -1,10 +1,10 @@
 /**
- * This Polygon file contains Top 10 erc20 tokens by Market Capitalization in the object name polygon which was collected from Polygon PoS Platform
+ * This Polygon file contains Top 10 erc20 tokens in the object name polygon which was collected from Polygon PoS Platform
  *  Data Source HREF : https://polygonscan.com/tokens
  */
 
 
-const polygon: object = {
+const polygon = {
 
     USDT: {
         name: '(PoS) Tether USD ',
