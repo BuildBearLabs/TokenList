@@ -16,6 +16,11 @@ tokenlist is available on the npm registry. You can install it using the followi
 ```bash 
   yarn add @shreyaans/tokenlist
 ``` 
+## Demo
+Made a small react app to quickly test out this package. Made this react app by npm installing this package only 
+
+React app - [https://token-list-test.netlify.app/](https://token-list-test.netlify.app/)
+
 
 ## Usage
 
