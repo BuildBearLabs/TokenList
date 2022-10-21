@@ -19,7 +19,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -31,8 +30,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "tokenlist",
-  "author": "Emmanuel Antony",
+  "name": "erctokenlist",
+  "author": "Hitesh Kowdiki",
   "module": "dist/tokenlist.esm.js",
   "size-limit": [
     {
