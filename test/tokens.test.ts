@@ -53,3 +53,12 @@ describe('Token from polygon Mainnet', () => {
     });
   });
 });
+describe('Token from polygon Mainnet', () => {
+  it('true', () => {
+    expect(tokens.polygon.MATIC).toEqual({
+      name: 'Polygon',
+      symbol: 'MATIC',
+      address: '0x0000000000000000000000000000000000001010',
+    });
+  });
+});

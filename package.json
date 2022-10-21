@@ -38,11 +38,11 @@
   "size-limit": [
     {
       "path": "dist/tokenlist.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "50 KB"
     },
     {
       "path": "dist/tokenlist.esm.js",
-      "limit": "10 KB"
+      "limit": "50 KB"
     }
   ],
   "devDependencies": {
