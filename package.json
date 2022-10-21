@@ -12,12 +12,13 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build && size-limit",
+    "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "buildAndTest":"tsdx build && size-limit && tsdx test "
   },
   "peerDependencies": {},
   "husky": {

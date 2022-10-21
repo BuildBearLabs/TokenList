@@ -1,11 +1,17 @@
+import { TokensObj, ChainArrType } from './types';
+
 import { ethereumArr } from './chains/ethereum';
 import { bscArr } from './chains/bsc';
 import { avalancheArr } from './chains/avalanche';
 import { polygonArr } from './chains/polygon';
 // import { cleoArr } from './chains/cleo';
 
-//stores chain name with id so that we can access with both
-let chainsRefArray = [
+//stores chain name with id so that we can access tokens with both of them
+let chainsRefArray: {
+  chainName: string;
+  chainArr: ChainArrType; //checks if imported chains are of correct type
+  chainId: number;
+}[] = [
   {
     chainName: 'homestead',
     chainArr: ethereumArr,
@@ -34,23 +40,26 @@ let chainsRefArray = [
 ];
 
 //tokens obj constructor
-function TokensObejct(this: any) {
+function TokensObejct(this: TokensObj) {
+  //loops through all chains to make tokens.chain
   for (let i = 0; i < chainsRefArray.length; i++) {
-    const chain = chainsRefArray[i]; //chain will be referring to the chain object which contains chain's name,id and array of tokens
+    const chainObj = chainsRefArray[i];
+    //chainObj will be referring to the object which contains chain's name,id and array of tokens
 
-    this[chain.chainName] = {}; //this initalizes the chain object in main object
+    this[chainObj.chainName] = {}; //this initalizes the chain object in main tokens object
 
-    for (let j = 0; j < chain.chainArr.length; j++) {
-      let token = chain.chainArr[j];
+    //converts chainArr to get tokens.chain.token values
+    for (let j = 0; j < chainObj.chainArr.length; j++) {
+      let token = chainObj.chainArr[j];
       let TokenSymbol = token.symbol;
-      this[chain.chainName][TokenSymbol] = token;
+      this[chainObj.chainName][TokenSymbol] = token;
     }
 
-    this[chain.chainId] = this[chain.chainName]; //sets chain id so that chain id can be accessed
+    this[chainObj.chainId] = this[chainObj.chainName]; //sets chain id so that chain id can be accessed
   }
 }
 
-export const tokens = new (TokensObejct as any)();
+export const tokens: TokensObj = new (TokensObejct as any)();
 
 //small utility function to check whether chain contains token or not
 export function isTokenInChain(chain: string, token: string) {

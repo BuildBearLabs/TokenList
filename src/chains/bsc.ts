@@ -268,46 +268,46 @@ export let bscArr = [
   {
     name: 'Dai Token',
     symbol: 'DAI',
-    address: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3'
+    address: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
   },
   {
     name: 'Matic Token',
     symbol: 'MATIC',
-    address: '0xcc42724c6683b7e57334c4e856f4c9965ed682bd'
+    address: '0xcc42724c6683b7e57334c4e856f4c9965ed682bd',
   },
   {
     name: 'Uniswap',
     symbol: 'UNI',
-    address: '0xbf5140a22578168fd562dccf235e5d43a02ce9b1'
+    address: '0xbf5140a22578168fd562dccf235e5d43a02ce9b1',
   },
   {
     name: 'ChainLink Token',
     symbol: 'LINK',
-    address: '0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd'
+    address: '0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd',
   },
   {
     name: 'Cardano Token',
     symbol: 'ADA',
-    address: '0x3ee2200efb3400fabb9aacf31297cbdd1d435d47'
+    address: '0x3ee2200efb3400fabb9aacf31297cbdd1d435d47',
   },
   {
     name: 'Polkadot Token',
     symbol: 'DOT',
-    address: '0x7083609fce4d1d8dc0c979aab8c869ea2c873402'
+    address: '0x7083609fce4d1d8dc0c979aab8c869ea2c873402',
   },
   {
     name: 'TRON',
     symbol: 'TRX',
-    address: '0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b'
+    address: '0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b',
   },
   {
     name: 'Avalanche',
     symbol: 'AVAX',
-    address: '0x1ce0c2827e2ef14d5c4f29a091d735a204794041'
+    address: '0x1ce0c2827e2ef14d5c4f29a091d735a204794041',
   },
   {
     name: 'Litecoin Token',
     symbol: 'LTC',
-    address: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94'
+    address: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94',
   },
 ];
