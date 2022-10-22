@@ -1,4 +1,6 @@
-export let avalancheArr = [
+import { ChainArrType } from "../types";
+
+export let avalancheArr:ChainArrType = [
   {
     name: 'AvaxClassic.com',
     symbol: 'AvaxClassic.com',

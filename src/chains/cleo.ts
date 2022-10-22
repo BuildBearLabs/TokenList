@@ -1,13 +1,10 @@
-export let cleoArr = [
+import { ChainArrType } from "../types";
+
+export let cleoArr:ChainArrType = [
   {
     name: 'Moola interest bearing CUSD',
     symbol: 'mCUSD',
     address: '0x918146359264c492bd6934071c6bd31c854edbc3',
-  },
-  {
-    name: 'Moola cUSD AToken',
-    symbol: 'mCUSD',
-    address: '0x64defa3544c695db8c535d289d843a189aa26b98',
   },
   {
     name: 'Moola interest bearing CEUR',

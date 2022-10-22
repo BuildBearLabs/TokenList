@@ -1,4 +1,6 @@
-export let bscArr = [
+import { ChainArrType } from "../types";
+
+export let bscArr:ChainArrType = [
   {
     name: 'Wrapped BNB',
     symbol: 'WBNB',

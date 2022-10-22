@@ -1,4 +1,6 @@
-export let polygonArr = [
+import { ChainArrType } from "../types";
+
+export let polygonArr:ChainArrType = [
   {
     name: 'XEN Crypto',
     symbol: 'mXEN',

@@ -56,7 +56,7 @@ tokens.chainName.tokenSymbol
     // }
 
     // The format is tokens.name.symbol
-    // where the name is homestead, polygon, bsc, avalanche and cleo
+    // where the name is homestead, polygon, bsc, avalanche, cleo and ftm
     // Can also accept chainId of chain
 ```
 
@@ -88,12 +88,17 @@ As of now homestead, polygon, bsc, avalanche and cleo chains are supported
 
 #### Number of tokens in each chain
 
-Avalanche: 102 tokens
-
-Bsc: 208 tokens
-
-Cleo: 82 tokens
+Polygon: 231 tokens
 
 Ethereum: 150 tokens
 
-Polygon: 231 tokens
+Bsc (Binance Smart Chain): 208 tokens
+
+Avalanche: 102 tokens
+
+Cleo: 82 tokens
+
+Ftm (Fantom) :100
+
+
+

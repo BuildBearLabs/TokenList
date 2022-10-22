@@ -19,3 +19,9 @@ export type ChainArrType = {
   symbol: string;
   address: string;
 }[];
+
+export type ChainsRefArrayType = {
+  chainName: string;
+  chainArr: ChainArrType; //checks if imported chains are of correct type
+  chainId: number;
+}[];

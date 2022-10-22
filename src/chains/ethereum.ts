@@ -1,4 +1,5 @@
-export let ethereumArr = [
+import { ChainArrType } from "../types";
+export let ethereumArr:ChainArrType = [
   {
     name: 'Tether USD',
     symbol: 'USDT',
@@ -750,3 +751,5 @@ export let ethereumArr = [
     address: '0xBB0E17EF65F82Ab018d8EDd776e8DD940327B28b',
   },
 ];
+export { ChainArrType };
+
