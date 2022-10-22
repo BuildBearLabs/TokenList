@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,7 +17,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "buildAndTest": "tsdx build && size-limit && tsdx test "
   },
   "peerDependencies": {},
   "husky": {
@@ -31,17 +32,17 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "tokenlist",
-  "author": "Emmanuel Antony",
+  "name": "@shreyaans/tokenlist",
+  "author": "Shreyaan Seth",
   "module": "dist/tokenlist.esm.js",
   "size-limit": [
     {
       "path": "dist/tokenlist.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "50 KB"
     },
     {
       "path": "dist/tokenlist.esm.js",
-      "limit": "10 KB"
+      "limit": "50 KB"
     }
   ],
   "devDependencies": {
