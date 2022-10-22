@@ -14,7 +14,7 @@ $ npm i @harshsingh_007/tokenlist
 ### Example
 
 ```ts
-    import { tokens } from "your-package";
+    const { tokens } = require("@harshsingh_007/tokenlist");
     const usdc = tokens.homestead.USDC; // This is a JS object
     
     console.log(usdc); // should return the following
