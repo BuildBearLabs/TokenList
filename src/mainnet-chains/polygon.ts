@@ -243,6 +243,9 @@ const polygonTokens: Token = {
   },
 };
 
+/**
+ * @desc Creates a mapping with chainIds with mainnet object, also name with mainnet object
+ */
 const polygon: Chain = {
   homestead: polygonTokens,
   137: polygonTokens,

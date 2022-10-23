@@ -253,6 +253,9 @@ const homesteadTokens: Token = {
   },
 };
 
+/**
+ * @desc Creates a mapping with chainIds with mainnet object, also name with mainnet object
+ */
 const homestead: Chain = {
   homestead: homesteadTokens,
   1: homesteadTokens,
