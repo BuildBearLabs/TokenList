@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,8 +10,9 @@
   "engines": {
     "node": ">=10"
   },
-  "keywords": ["tokenlist"],
-  
+  "keywords": [
+    "tokenlist"
+  ],
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
