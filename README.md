@@ -1,162 +1,153 @@
-## TokenList
+# TokenList-ERC20
 
-## Aim
+## About TokenList-ERC20 Package
+Get details about tokens from different Chains
 
-- To make an npm package which would be published to `npmjs.com`.
-- The entire package has to be written in typescript.
-- Use the tool [tsdx](https://tsdx.io/) to get an initial setup. 
-(Sample npm packages written in typescript: Link1 | Link2)
-- This package would point to the erc20 Contracts in different chains.
-- Example usage
-    
-    ```ts
-    import { tokens } from "your-package";
-    const usdc = tokens.homestead.USDC; // This is a JS object
-    
-    console.log(usdc); // should return the following
-    // {
-    //     name: "USD Coin",
-    //     symbol: "USDC",
-    //     address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-    // }
-    
-    const wmatic = tokens[137].WMATIC; // Also chainId(s) are accepted and not just the name
-    
-    console.log(wmatic); // should return the following
-    // {
-    //     name: "Wrapped Matic",
-    //     symbol: "WMATIC",
-    //     address: "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
-    // }
-    
-    // The format is tokens.name.symbol
-    // where the name is homestead or polygon
-    // Can also accept chainId
-    // And the token is symbol
-    
-    ```
-    
-- This package would exist to give users easy access to the tokens present in the blockchain while writing scripts.
-- Network homestead and polygon required. Others optional. **Only mainnet chains required.**
-- Top ten popular tokens required per network. Others optional.
-- Avoid reduplication of code for each network.
-- Code should be properly commented and maintainable
+Currently Polygon and Ethereum tokens are available
 
-## Submission
+---
+### Tokens available in the chains are:
+* Homestead - 945 ERC20 tokens
+* Polygon - 442 ERC20 tokens
+---
 
-- Go to [github.com/BuildBearLabs/TokenList](https://github.com/BuildBearLabs/TokenList).
-- Star the repo.
-- Fork the repo.
-- Start from that code as a base and build up the project.
-- Submit a PR.
-- Fill this [form](https://forms.gle/SNUKga7Myk6rATpr7)
+### Get details about token by using chain name or chain id:
+* Homestead
+   - Chain-name -`homestead`
+   - Chain-id -`1`
+* Polygon
+   - Chain-name -`polygon`
+   - Chain-id -`137`
 
-## Takeaways
+---
+## Installation
 
-- How to create a package in `npmjs.com`.
-- How to write libraries in Typescript.
-- Learning of good coding style and practices
-
-## TSDX User Guide
-
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
-
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
-
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
-
-### Commands
-
-TSDX scaffolds your new library inside `/src`.
-
-To run TSDX, use:
-
+Using npm:
 ```bash
-npm start # or yarn start
+$ npm i @harshsingh_007/tokenlist
+
 ```
+Using yarn:
+```bash
+$ yarn add @harshsingh_007/tokenlist
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
-
-To do a one-off build, use `npm run build` or `yarn build`.
-
-To run tests, use `npm test` or `yarn test`.
-
-### Configuration
-
-Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adjust the respective fields in `package.json` accordingly.
-
-#### Jest
-
-Jest tests are set up to run with `npm test` or `yarn test`.
-
-#### Bundle Analysis
-
-[`size-limit`](https://github.com/ai/size-limit) is set up to calculate the real cost of your library with `npm run size` and visualize the bundle with `npm run analyze`.
-
-##### Setup Files
-
-This is the folder structure we set up for you:
-
-```txt
-/src
-  index.tsx       # EDIT THIS
-/test
-  blah.test.tsx   # EDIT THIS
-.gitignore
-package.json
-README.md         # EDIT THIS
-tsconfig.json
 ```
+---
 
-#### Rollup
+## Example 
+### Usage
 
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
+```ts
+    const { tokens } = require("@harshsingh_007/tokenlist"); //importing package via require method
+    
+    //Syntax for accessing tokens by chainID:--
 
-#### TypeScript
+        //const variableName = tokens.chainName.token
+        //Where
+        // the format is tokens.chainName.symbol
+        // the variableName is your variable declared
+        // the chainName is homestead or polygon and
+        // the token is symbol
 
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
+        //Accessing homestead tokens by using chainName
+        const usdc = tokens.homestead.USDC; // This is a JS object
+        console.log(usdc); // should return the following
+        // {
+        //     name: "USD Coin",
+        //     symbol: "USDC",
+        //     address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        // }
+    
+        //Accessing polygon tokens by chainName
+        const wmatic = tokens.polygon.WMATIC; // This is a JS object
+        console.log(wmatic); // should return the following
+        // {
+        //     name: "Wrapped Matic",
+        //     symbol: "WMATIC",
+        //     address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+        // }
 
-### Continuous Integration
 
-#### GitHub Actions
+    //Syntax for accessing tokens by using chainID:--
 
-Two actions are added by default:
+        //const variableName = tokens.[chainID].token
+        //Where
+        // the format is tokens.[chainID].symbol
+        // the variableName is your variable declared
+        // the chainID is 1 for homestead and 137 for polygon 
+        // the token is symbol
 
-- `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
-- `size` which comments cost comparison of your library on every pull request using [`size-limit`](https://github.com/ai/size-limit)
-
-### Optimizations
-
-Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
-
-```js
-// ./types/index.d.ts
-declare var __DEV__: boolean;
-
-// inside your code...
-if (__DEV__) {
-  console.log('foo');
-}
+         //Accessing homestead tokens by chainID
+        const usdc = tokens[1].USDC; // This is a JS object
+        console.log(usdc); // should return the following
+        // {
+        //     name: "USD Coin",
+        //     symbol: "USDC",
+        //     address: "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        // }
+    
+        //Accessing polygon tokens by chainID
+        const wmatic = tokens[137].WMATIC; // This is a JS object
+        console.log(wmatic); // should return the following
+        // {
+        //     name: "Wrapped Matic",
+        //     symbol: "WMATIC",
+        //     address: "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+        // }
+    
+    
+    
 ```
+---
 
-You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
+### Token Symbol Examples
+* Homestead
+---
+    
+    [
+        'USDT', 'USDC',  'BNB',   'BUSD',      'MATIC', 'DAI',
+        'SHIB', 'stETH', 'HEX',   'THETA',     'WBTC',  'UNI',
+        'OKB',  'LEO',   'LINK',  'CRO',       'QNT',   'NEAR',
+        'VEN',  'XCN',   'FRAX',  'APE',       'wMANA', 'SAND',
+        'LDO',  'HT',    'cUSDC', 'MKR',       'KCS',   'CHZ',
+        'USDP', 'TUSD',  'USDD',  'BTT',       'cDAI',  'GRT',
+        'cETH', 'SNX',   'FTM',   'NEXO',      'PAXG',  'BIT',
+        'XDCE', 'FXS',   'XAUt',  'ENJ',       'BAT',   'CEL',
+        'RPL',  'ZIL',   'AMP',   'DFI',       'cUSDT', '1INCH',
+        'ENS',  'HOT',   'COMP',  'GUSD',      'wCELO', 'LRC',
+        'OHM',  'NXM',   'GMT',   'pSAFEMOON', 'GNO',   'WQTUM',
+        'SRM',  'MCO',   'RSR',   'SUSHI',     'GLM',   'HBTC',
+        'POLY', 'IOTX',  'GALA',  'YFI',       'LPT',   'BAL',
+        'OMG',  'ONE',   'MIM',   'IOST',      'EURT',  'ZRX',
+        'DYDX', 'WOO',   'HUSD',  'CHSB',      'SYN',   'RBN',
+        'WAX',  'VVS',   'NFT',   'ZEON',      'SXP',   'MEDX',
+        'UMA',  'INJ',   'CET',   'RNDR',
+        ... 845 more items
+    ]
 
-### Module Formats
+* Polygon 
+---
+     [
+            'USDT',   'pUSDt', 'USDC',  'BNB',   'BUSD',  'MATIC',
+            'DAI',    'WBTC',  'UNI',   'AVAX',  'LEO',   'LINK', 
+            'CRO',    'FRAX',  'APE',   'AAVE',  'MANA',  'SAND',
+            'LDO',    'HT',    'THETA', 'MKR',   'CHZ',   'PAX',
+            'TUSD',   'USDD',  'GRT',   'SNX',   'FTM',   'NEXO',
+            'PAXG',   'CRV',   'FXS',   'ENJ',   'CEL',   'BAT',
+            'RPL',    'WOO',   'AMP',   'UST',   '1INCH', 'HOT',
+            'COMP',   'GUSD',  'LRC',   'GNO',   'POLY',  'SRM',
+            'GLM',    'SUSHI', 'SXP',   'IOTX',  'YFI',   'LPT',
+            'BAL',    'HUSD',  'OMG',   'ZRX',   'EWTB',  'CHSB',
+            'SYN',    'UMA',   'INJ',   'ELON',  'RNDR',  'EURS',
+            'VGX',    'OCEAN', 'PYR',   'BOBA',  'POWR',  'ORBS',
+            'KNC',    'GNS',   'TEL',   'BNT',   'RLC',   'XYO',
+            'renBTC', 'sUSD',  'BEPRO', 'OGN',   'KEEP',  'aETHc',
+            'AGIX',   'FET',   'IQ',    'OXT',   'XSGD',  'miMATIC',
+            'GHST',   'MASK',  'MFT',   'ATA',   'USDK',  'BAND',
+            'LCX',    'POND',  'ORN',   'FORTH',
+            ... 342 more items
+     ]
 
-CJS, ESModules, and UMD module formats are supported.
 
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
-
-### Named Exports
-
-Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
-
-### Including Styles
-
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
-
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
-
-### Publishing to NPM
-
-We recommend using [np](https://github.com/sindresorhus/np).
+## License
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
