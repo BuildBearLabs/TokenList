@@ -27,6 +27,11 @@ Using npm:
 $ npm i @harshsingh_007/tokenlist
 
 ```
+Using yarn:
+```bash
+$ yarn add @harshsingh_007/tokenlist
+
+```
 ---
 
 ## Example 
@@ -146,7 +151,3 @@ $ npm i @harshsingh_007/tokenlist
 
 ## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-## Keyword
-* tokenlist 
----
